@@ -1,7 +1,21 @@
+
 # Aeroy-Fin-Stabilization-System
-Fin Stabilization System For Rockets 
 
-The 3d files you can find here: https://www.thingiverse.com/aero_y_official3333/designs
-When youre facing issues with the code or wiring please contact us here: https://www.instagram.com/aero_y_official/
 
-Credits: if you post this code or this files on social media make sure to give us credits in some way, best way is to tag us
+## Materials
+- Gyroscope Accelerometer Sensor: [MPU-6050](https://makeradvisor.com/tools/mpu-6050-3-axis-accelerometer-and-gyroscope-sensor/)
+- Servos: [servoext](link)
+- Plastic: [plasticText](link)
+
+## Fin Stabilization System For Rockets
+> 3D Files: [AeroY Fin Stabilization System Servo Holder](https://www.thingiverse.com/thing:6350998)
+
+
+## Links
+> Thingiverse: [aero_y_official3333](https://www.thingiverse.com/aero_y_official3333/designs)  
+> Issues/Questions: [Messege @aeroy-official](https://www.instagram.com/aero_y_official/)  
+
+
+## Credit
+If you post this code or this files on social media make sure to give us credits in some way, best way is to tag us  
+> Instagram: [@aeroy-official](https://www.instagram.com/aero_y_official/)
