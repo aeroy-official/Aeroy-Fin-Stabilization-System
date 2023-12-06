@@ -11,20 +11,20 @@
 
 class Controller {
     public: 
+        MPU6050 mpu6050;
+
         Servo servo1;
         Servo servo2;
         Servo servo3;
         Servo servo4;
 
-        Json::Value pins;
+        void Controller(MPU6050 mpu6050, string fromFile='pins.json') {
+            this->mpu6050 = mpu6050;
 
-        void static initializeController(MPU6050 mpu6050, string fromFile) {
-            // read a JSON file
-            std::ifstream pins_file(fromFile, std::ifstream::binary);
-            pins_file >> pins;
+            Json::Value pins = getPins(fromFile);
 
-            initializeServos();
-            initializeOutput();
+            initializeServos(pins);
+            initializeOutput(pins);
 
             Serial.begin(9600);
             Wire.begin();
@@ -32,7 +32,15 @@ class Controller {
             mpu6050.calcGyroOffsets(true);
         }
 
-        void static initializeServos() {
+        Json::Value getPins(string fromFile='pins.json') {
+            // read a JSON file
+            std::ifstream pins_file(fromFile, std::ifstream::binary);
+            pins_file >> pins;
+
+            return pins;
+        }
+
+        void initializeServos(Json::Value pins) {
             int servo1pin = pins["servoPins"]["servo1"];
             int servo2pin = pins["servoPins"]["servo2"];
             int servo3pin = pins["servoPins"]["servo3"];
@@ -44,7 +52,7 @@ class Controller {
             servo4.attach(servo4pin);
         }
 
-        void static initializeOutput() {
+        void initializeOutput(Json::Value pins) {
             int greenLED = pins["outputPins"]["greenLED"];
             int redLED = pins["outputPins"]["redLED"];
             int buzzer = pins["outputPins"]["buzzer"];
@@ -53,6 +61,8 @@ class Controller {
             pinMode(redLED, OUTPUT);
             pinMode(buzzer, OUTPUT);
         }
+
+        void setOutputPin(int pin, )
 
     private: 
 

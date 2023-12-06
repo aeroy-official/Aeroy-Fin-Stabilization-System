@@ -15,28 +15,22 @@
  * +----------------------------------------+
 */
 
-#include <Wire.h> 
-#include <MPU6050_tockn.h> 
-#include <Servo.h>
+#include "Wire.h"
+#include "MPU6050_tockn.h"
+#include "Servo.h"
 
 #include "telemetry.cpp"
 #include "controller.cpp"
 
-Servo servo1;
-Servo servo2;
-Servo servo3;
-Servo servo4;
-
-int pos = 0;
-
-MPU6050 mpu6050(Wire);
+Controller controler;
+MPU6050 mpu6050;
 
 unsigned long timeMilliseconds = 1000UL;
 
 void setup() {
-  Controller.initializeControler(mpu6050, "pins.json");
+  mpu6050(Wire);
+  controler(mpu6050, "pins.json");
   
-
   digitalWrite(ledpinr, HIGH);
   digitalWrite(ledping, HIGH);
   digitalWrite(buzzer, HIGH);
