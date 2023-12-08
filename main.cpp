@@ -21,14 +21,14 @@
 
 #include "controller.cpp"
 
-Controller controler;
+Controller controller;
 MPU6050 mpu6050;
 
 unsigned long timeMilliseconds = 1000UL;
 
 void setup() {
   mpu6050(Wire);
-  controler(mpu6050, "pins.json");
+  controller(mpu6050, "pins.json");
   
   digitalWrite(ledpinr, HIGH);
   digitalWrite(ledping, HIGH);
