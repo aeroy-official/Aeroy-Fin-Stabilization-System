@@ -3,10 +3,9 @@
     Controler Class
 */
 
-#include <ifstream>
-
-#include <MPU6050_tockn.h> 
-#include <Servo.h>
+#include externalLibraries/Wire.h
+#include externalLibraries/MPU6050_tockn.h
+#include externalLibraries/Servo.h
 #include <json/value.h>
 
 class Controller {

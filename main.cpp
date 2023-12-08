@@ -8,18 +8,17 @@
  * | @version 1.0.0                         |
  * | @date 12/5/2023                        |
  * +----------------------------------------+
- * | JSON Parser:                           |
- * |   https://github.com/nlohmann/json     |
  * | Vector3:                               |
  * |   https://github.com/jimmyberg/Vector3 |
  * +----------------------------------------+
 */
 
-#include "Wire.h"
+#include "/workspaces/Aeroy-Fin-Stabilization-System/arduino-library-files-master/libraries/Wire/Wire.h"
 #include "MPU6050_tockn.h"
 #include "Servo.h"
 
 #include "controller.cpp"
+#include "telemetry.cpp"
 
 Controller controller;
 MPU6050 mpu6050;

@@ -16,7 +16,7 @@
         "greenLED": 7,
         "buzzer": 5
     },
-    
+
     "servoPins": {
         "servo1": 9,
         "servo2": 10,
