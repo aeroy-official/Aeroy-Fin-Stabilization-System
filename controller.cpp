@@ -62,7 +62,12 @@ class Controller {
             pinMode(buzzer, OUTPUT);
         }
 
-        void setOutputPin(int pin, )
+        void writeServos(int writeValue[4]) {
+            servo1.write(writeValue[0]);
+            servo2.write(writeValue[1]);
+            servo3.write(writeValue[2]);
+            servo4.write(writeValue[3]);
+        }
 
     private: 
 

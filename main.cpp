@@ -19,7 +19,6 @@
 #include "MPU6050_tockn.h"
 #include "Servo.h"
 
-#include "telemetry.cpp"
 #include "controller.cpp"
 
 Controller controler;
@@ -70,4 +69,8 @@ void loop() {
   } else {
     servo4.write(90 - mpu6050.getAngleX());
   }
+}
+
+void printAngles(float angleX, float angleY, float angleZ) {
+    Serial.print("x\u00b0: " + angleX + "\ty\u00b0: " + angleY + "\tz\u00b0: " + angleZ);
 }
