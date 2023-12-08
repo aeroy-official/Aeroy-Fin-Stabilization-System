@@ -3,10 +3,10 @@
 
 
 ## Materials
-- Gyroscope Accelerometer Sensor: [MPU-6050](https://makeradvisor.com/tools/mpu-6050-3-axis-accelerometer-and-gyroscope-sensor/)
-- Servos: [servoExample](link)
-- Plastic: [plasticExample](link)
-- Other Link Example: [examleExample](link)
+> - Gyroscope Accelerometer Sensor: [MPU-6050](https://makeradvisor.com/tools/mpu-6050-3-axis-accelerometer-and-gyroscope-sensor/)
+> - Servos: [servoExample](link)
+> - Plastic: [plasticExample](link)
+> - Other Link Example: [examleExample](link)
 
 ## Fin Stabilization System For Rockets
 > 3D Files: [AeroY Fin Stabilization System Servo Holder](https://www.thingiverse.com/thing:6350998)
