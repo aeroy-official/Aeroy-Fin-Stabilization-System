@@ -1,0 +1,26 @@
+
+{
+    "miscellaneousPins": {
+        "VCC": "5V",
+        "GND": "GND",
+        "SCL": "A5",
+        "SDA": "A4",
+        "XDA": null,
+        "XCL": null,
+        "AD0": null,
+        "INT": null
+    },
+
+    "outputPins": {
+        "redLED": 6,
+        "greenLED": 7,
+        "buzzer": 5
+    },
+
+    "servoPins": {
+        "servo1": 9,
+        "servo2": 10,
+        "servo3": 11,
+        "servo4": 12
+    }
+}
